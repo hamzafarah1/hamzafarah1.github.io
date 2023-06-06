@@ -65,23 +65,23 @@ h2, h3 {
     color: black;
 }
 
-#portfolio {
+#Portfolio {
     list-style-type: none;
     padding-left: 0;
 }
 
-#portfolio li {
+#Portfolio li {
     background: #fff;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-#portfolio li:hover {
+#Portfolio li:hover {
     background: #eee;
 }
 
-#portfolio a {
+#Portfolio a {
     text-decoration: none;
     color: #454545;
 }
