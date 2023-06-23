@@ -20,13 +20,20 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
+        var circle;
+        var circles = [];
 
 
         // TODO 2 : Create a function that draws a circle 
-        
+        function drawCircle(){
+
+        }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
+        for(i = 0; i < 100; i++){
+           console.log(i++)
+        }
+     
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -39,15 +46,20 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
+         
 
+          
+
+            }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
-
+     
             // TODO 9 : Iterate over the array
-           
-            
-        }
+            for(i = 0; i < myArray.legth; i++){
+                console.log(i++)
+                game.checkCirclePosition(circles[i])
+
     
         /* 
         This Function should check the position of a circle that is passed to the 
@@ -62,12 +74,20 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
+            if(circle.y > canvas.height){
+                circle.y = 0;
+            }
+            if(circle.x < canvas.width){
+                circle.x = 0
+            }
+            if(circle.y < canvas.height){
+                circle.y = 0;
+            }
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
-        
+        }
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
         /////////////////////////////////////////////////////////////
